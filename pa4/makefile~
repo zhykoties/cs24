@@ -1,0 +1,11 @@
+poly2: poly2.o polytest2.o
+	g++ poly2.o polytest2.o -o poly2
+
+poly2.o: poly2.cpp poly2.h
+	g++ poly2.cpp -c
+
+polytest2.o: polytest2.cpp poly2.h
+	g++ polytest2.cpp -c
+
+clean:
+	rm poly2 poly2.o polytest2.o

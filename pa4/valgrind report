@@ -1,0 +1,40 @@
+==29004== Memcheck, a memory error detector
+==29004== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==29004== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==29004== Command: ./polyexam2 1
+==29004== 
+
+START OF TEST 1:
+Testing basic1: constructor, coefficient, degree (15 points).
+I will now test the default constructor. After initializing
+with the default constructor, a the coefficient member
+function should always return zero.
+Test passed.
+
+I will now test the constructor with arguments.
+Test passed.
+
+I will now test constructor like this: polynomial p(0.0, 3).
+After initializing this way, a polynomial
+should have all zero coefficients.
+Test passed.
+
+Test 1 got 15 points out of a possible 15.
+END OF TEST 1.
+
+Completed test 1; result: 15
+==29004== 
+==29004== HEAP SUMMARY:
+==29004==     in use at exit: 72,704 bytes in 1 blocks
+==29004==   total heap usage: 6 allocs, 5 frees, 72,864 bytes allocated
+==29004== 
+==29004== LEAK SUMMARY:
+==29004==    definitely lost: 0 bytes in 0 blocks
+==29004==    indirectly lost: 0 bytes in 0 blocks
+==29004==      possibly lost: 0 bytes in 0 blocks
+==29004==    still reachable: 0 bytes in 0 blocks
+==29004==         suppressed: 72,704 bytes in 1 blocks
+==29004== 
+==29004== For counts of detected and suppressed errors, rerun with: -v
+==29004== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
